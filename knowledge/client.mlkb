@@ -13,6 +13,13 @@ root {
     }
   }
   objectValue {
+    key: "battleIndex"
+    value {
+      type: Int
+      intValue: -1
+    }
+  }
+  objectValue {
     key: "chatting"
     value {
       type: Bool
@@ -73,6 +80,13 @@ root {
     value {
       type: Bool
       boolValue: false
+    }
+  }
+  objectValue {
+    key: "isAlive"
+    value {
+      type: Bool
+      boolValue: true
     }
   }
   objectValue {

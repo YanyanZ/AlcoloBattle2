@@ -47,7 +47,7 @@ namespace alcolo
 			
 			if (entityKnowledge.isTypeCompatible(p,mlv::utils::type::integer))
 			{
-				int res = entityKnowledge.getInt(p) + params.value;
+				uint64_t res = entityKnowledge.getInt(p) + params.value;
 				entityKnowledge.setInt(p, res);
 				return mlv::behavior::action::running;
 			}
