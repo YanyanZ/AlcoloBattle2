@@ -2,6 +2,7 @@
 #define IMPLEMENTATION_LIBRARY_H
 #include "setEntityBooleanAction.h"
 #include "Component.h"
+#include "incrementAction.h"
 
 #include <mlv/simulation/configuration/AbstractImplementationLibrary.h>
 
@@ -19,6 +20,7 @@ namespace alcolo
 
 		//Custom Action
 		SetEntityBoolean setEntityBoolean_;
+		Increment increment_;
 
 		templates::impl_lib::Component* component_;
 	}; 
