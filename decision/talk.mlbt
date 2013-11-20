@@ -24,12 +24,12 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "c3c329c3-0913-4d7f-836b-91dd50b81f10"
+      name: "f3c4ad26-5cc5-499f-8e20-e76e6b4e4931"
       presentation {
         itemTemplate: "BTParallelNode.qml"
         position {
-          x: 5424.5
-          y: 2668.5
+          x: 5509.28
+          y: 2640.2999999999997
           z: 0
         }
       }
@@ -47,7 +47,7 @@ children {
       [mlv.toolset.proto.Node.extension] {
         children {
           type: Node
-          name: "4c6ce142-eb77-4eaa-8d30-98347b64755b"
+          name: "a7728856-83e2-4430-aab0-f6d2b229fe2a"
           presentation {
             itemTemplate: "BTActionNode.qml"
             position {
@@ -75,7 +75,7 @@ children {
         }
         children {
           type: Node
-          name: "d8526163-48a3-4c9c-b7aa-59ff8400280e"
+          name: "01355f13-0959-4b24-9571-7f356428ba26"
           presentation {
             itemTemplate: "BTActionNode.qml"
             position {
@@ -92,16 +92,16 @@ children {
               [mlv.toolset.proto.ActionNode.extension] {
                 actionName: "debugOut"
                 parameters {
-                  type: DoubleType
-                  name: "target.y"
-                  kbSelection: plainValue
-                  doubleValue: 3.5
-                }
-                parameters {
                   type: StringType
                   name: "text"
                   kbSelection: selectParameters
                   stringValue: "caption"
+                }
+                parameters {
+                  type: IntType
+                  name: "target.y"
+                  kbSelection: plainValue
+                  intValue: 2
                 }
               }
             }

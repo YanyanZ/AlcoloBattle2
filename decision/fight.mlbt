@@ -1,0 +1,66 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{906e954a-5cfb-49e6-a8cd-ce3baa5184a5}"
+name: "fight"
+description: ""
+children {
+  type: Node
+  name: "0d903a27-15da-4b7f-904d-4318db3e412b"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "bb0857f6-fccd-4b6f-bfe3-fcb1471bc58a"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5437
+          y: 2568
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "775ba861-3b63-400e-9ef7-fa156f262d6e"
+          presentation {
+            itemTemplate: "BTSelectorRandom.qml"
+            position {
+              x: -2.5
+              y: 101.5
+              z: 0
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SelectorNodeRandom
+              isActivated: true
+            }
+          }
+        }
+      }
+    }
+  }
+}

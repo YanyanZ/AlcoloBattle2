@@ -1515,12 +1515,46 @@ children {
         }
         children {
           type: Node
+          name: "3b4b0700-c988-4bf6-bfdb-879b1f45d134"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 1597.3695048388918
+              y: 343.74874163658751
+              z: 0
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "Increment"
+                parameters {
+                  type: StringType
+                  name: "key"
+                  kbSelection: plainValue
+                  stringValue: "levelDrunk"
+                }
+                parameters {
+                  type: IntType
+                  name: "value"
+                  kbSelection: plainValue
+                  intValue: 1
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
           name: "af633daf-0e87-427a-9e6a-f43011c1de47"
           presentation {
             itemTemplate: "BTActionNode.qml"
             position {
-              x: 1471.121645806812
-              y: 330.58913388917108
+              x: 2204.4828033906851
+              y: 372.43583967664881
               z: nan
             }
             label: "Do nothing"

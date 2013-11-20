@@ -132,6 +132,13 @@ root {
     }
   }
   objectValue {
+    key: "team"
+    value {
+      type: String
+      stringValue: "client"
+    }
+  }
+  objectValue {
     key: "thirsty"
     value {
       type: Bool
