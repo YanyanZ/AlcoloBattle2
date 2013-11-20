@@ -1,0 +1,110 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{6d77189f-6262-4371-8bd2-d5dee5e650d9}"
+name: "goTo"
+description: ""
+children {
+  type: Node
+  name: "78850a76-76ba-4023-91f1-36a5be9630ce"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "976dee39-1bb6-437e-9172-39eae0630496"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5160.3
+          y: 2643.86
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "1ccb1356-b9ee-463f-8a66-ee6df950f408"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -104.14000000000033
+              y: 150.53999999999951
+              z: 0
+            }
+            label: "setDestination"
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "setEntityKnowledgeProperty"
+                parameters {
+                  type: StringType
+                  name: "key"
+                  kbSelection: plainValue
+                  stringValue: "destination"
+                }
+                parameters {
+                  type: StringType
+                  name: "value"
+                  kbSelection: selectParameters
+                  stringValue: "table0"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "517e89ad-ba0f-48c4-aedb-880cb23ef3a4"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 108.27999999999975
+              y: 146.23999999999933
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "goto"
+                parameters {
+                  type: StringType
+                  name: "target"
+                  kbSelection: selectLocalKB
+                  stringValue: "destination"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

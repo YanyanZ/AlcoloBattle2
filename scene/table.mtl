@@ -1,0 +1,16 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 11.11.2013 18:04:13
+
+newmtl Material__31
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Florian\Downloads\0038_Veranda Table and Chairs kit\Table_and_Chairs_kit_Veranda_round_kit_MAX\RenderStuff_Table_and_Chairs_kit_Veranda_round_kit_marble.jpg
+	map_Kd C:\Users\Florian\Downloads\0038_Veranda Table and Chairs kit\Table_and_Chairs_kit_Veranda_round_kit_MAX\RenderStuff_Table_and_Chairs_kit_Veranda_round_kit_marble.jpg

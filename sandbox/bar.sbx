@@ -1,0 +1,41 @@
+version {
+  major: 0
+  minor: 3
+  patch: 1
+}
+configuration {
+  resourcesLocation {
+    type: PROJECT_DIR
+    path: "./scene"
+  }
+  resourcesLocation {
+    type: WORKING_DIR
+    path: "./media"
+  }
+  cfg: "resources.cfg"
+  dotscene: "bar.scene"
+  failOnMissingAssets: false
+  axisMeshName: ""
+  overlay: "MasaLogo_Overlay"
+  freeCamera {
+    keyboardTranslationSensitivity: 20
+  }
+  debugView {
+    name: "navmesh.surface"
+    resource: "BlueColor"
+    translation {
+      x: 0
+      y: 0.2
+      z: 0
+    }
+  }
+  debugView {
+    name: "navmesh.borders"
+    resource: "PurpleColorEmissive"
+    translation {
+      x: 0
+      y: 0.25
+      z: 0
+    }
+  }
+}

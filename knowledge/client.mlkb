@@ -1,0 +1,155 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+root {
+  type: Object
+  objectValue {
+    key: "atTable"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "chatting"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command1"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command2"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command3"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command4"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "detectPeople"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "drunk"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "fighting"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "hasADrink"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "isAttacked"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "levelDrunk"
+    value {
+      type: Int
+      intValue: 0
+    }
+  }
+  objectValue {
+    key: "levelPee"
+    value {
+      type: Int
+      intValue: 0
+    }
+  }
+  objectValue {
+    key: "needToPee"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "ordering"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "peeing"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "screaming"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "speed"
+    value {
+      type: Int
+      intValue: 100
+    }
+  }
+  objectValue {
+    key: "thirsty"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "thresholdDrunk"
+    value {
+      type: Int
+      intValue: 100
+    }
+  }
+  objectValue {
+    key: "thresholdPee"
+    value {
+      type: Int
+      intValue: 100
+    }
+  }
+}

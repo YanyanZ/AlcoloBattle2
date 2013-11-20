@@ -1,0 +1,59 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{d34229ce-9aa8-4fda-8455-9d7e887dd23c}"
+  name: "Secu"
+  position {
+    x: 21
+    y: 0
+    z: -33
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: -0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/barman.mlent"
+  id: "{49c5491d-1ad4-435e-a1cc-839b6f315470}"
+  name: "Barman"
+  position {
+    x: 41
+    y: 0
+    z: 43
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{0601aa9f-1d5b-4ffe-b2ed-9a7309c1716a}"
+  name: "Gen"
+  position {
+    x: -16
+    y: 0
+    z: 17
+  }
+  orientation {
+    w: 0.10452846307727237
+    x: 0
+    y: 0.99452189538828317
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}

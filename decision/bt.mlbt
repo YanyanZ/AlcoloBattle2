@@ -1,0 +1,75 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{a1096324-1eb3-409e-aabb-64e5fccf4d26}"
+name: "bt"
+description: ""
+children {
+  type: Node
+  name: "91fa71cd-09dd-4cd2-8594-64e6b0779af3"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "83d9938c-e868-44e7-b45c-b24a301db077"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5432
+          y: 2565
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "4e141934-8b2b-4f61-8300-ef3eab2762a2"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -3.5
+              y: 129.5
+              z: 0
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "debugOut"
+                parameters {
+                  type: StringType
+                  name: "text"
+                  kbSelection: plainValue
+                  stringValue: "Ancestor"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

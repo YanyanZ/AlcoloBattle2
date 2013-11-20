@@ -1,0 +1,55 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{980a53a4-4547-40ef-97b6-45523c400572}"
+name: "securit\351"
+description: ""
+children {
+  type: Node
+  name: "f4709ae3-5e73-4b0f-9a09-50a30251c284"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "1f8d8aa1-5bc6-4d21-ad5b-ac461b3f8c70"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5206
+          y: 2715
+          z: 0
+        }
+        label: "debugOut"
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "debugOut"
+            parameters {
+              type: StringType
+              name: "text"
+              kbSelection: plainValue
+              stringValue: "Test"
+            }
+          }
+        }
+      }
+    }
+  }
+}

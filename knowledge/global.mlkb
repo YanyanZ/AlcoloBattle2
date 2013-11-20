@@ -1,0 +1,286 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+root {
+  type: Object
+  objectValue {
+    key: "battles"
+    value {
+      type: Array
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Int
+        intValue: 0
+      }
+      arrayValue {
+        type: Bool
+        boolValue: false
+      }
+    }
+  }
+  objectValue {
+    key: "command1"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command2"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command3"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "command4"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "comptoirs"
+    value {
+      type: Array
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 8
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 38
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 15
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 38
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 37
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 38
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 43
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 38
+          }
+        }
+      }
+    }
+  }
+  objectValue {
+    key: "tables"
+    value {
+      type: Array
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 40
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 25
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 30
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 30
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 30
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 20
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 20
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 18
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 18
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 30
+          }
+        }
+      }
+    }
+  }
+}

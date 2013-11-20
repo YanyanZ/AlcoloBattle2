@@ -1,0 +1,815 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{c5a6570f-6c8f-4fd5-8ec5-1c3d116b3897}"
+  name: "Secu 1 - TF"
+  position {
+    x: 21
+    y: 0
+    z: -33
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: -0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{2d4392a6-19bc-4e87-abff-e0596a6ffd96}"
+  name: "Secu 2 - TM"
+  position {
+    x: 36
+    y: 0
+    z: -33
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: -0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{65d30acb-5ccd-49cc-9115-cd9765fb5e61}"
+  name: "Secu 3 - BB"
+  position {
+    x: 23
+    y: 0
+    z: 48
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{2ac2d9e3-b182-4c01-b53a-529f952f6f25}"
+  name: "Secu 4 - BH"
+  position {
+    x: -4
+    y: 0
+    z: 48
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{afb0a18f-4b90-457c-84dc-ba935ad2a0a8}"
+  name: "Secu 5 - GG"
+  position {
+    x: -34
+    y: 0
+    z: 41
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{630a7ffe-48f8-486b-bd04-3a371fcd8dcd}"
+  name: "Secu 6 - GD"
+  position {
+    x: -34
+    y: 0
+    z: 33.3
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{85574e4c-aea2-4be0-ac0f-c22da572e793}"
+  name: "Secu 7 - SG"
+  position {
+    x: -32
+    y: 0
+    z: 15
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{527de33e-0799-4ce1-a040-dbf69b2ded0c}"
+  name: "Secu 8 - SM"
+  position {
+    x: -32
+    y: 0
+    z: 4.7
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{26c0694a-fb8a-4762-a3aa-c6bfc03f9e46}"
+  name: "Secu 9 - SD"
+  position {
+    x: -32
+    y: 0
+    z: -5.7
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/securit\351.mlent"
+  id: "{f5ba3485-8f93-4f94-a4c5-62e7cc8871f3}"
+  name: "Secu 10 - B"
+  position {
+    x: -24
+    y: 0
+    z: -29
+  }
+  orientation {
+    w: 0.92387953249166432
+    x: 0
+    y: -0.3826834324124625
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/barman4.mlent"
+  id: "{091d71b4-b547-4705-a709-35f8d981acf7}"
+  name: "Barman 1 - BB"
+  position {
+    x: 41
+    y: 0
+    z: 43
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/barman3.mlent"
+  id: "{f35d6b4d-95aa-44e8-b104-bfdecfffab5a}"
+  name: "Barman 2 - BB"
+  position {
+    x: 36
+    y: 0
+    z: 43
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/barman2.mlent"
+  id: "{c85cea33-3688-4356-b604-581578b7f602}"
+  name: "Barman 3 - BG"
+  position {
+    x: 13
+    y: 0
+    z: 43
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/barman1.mlent"
+  id: "{cd176178-4f7a-47b0-93f5-a612a15a6141}"
+  name: "Barman 4 - BG"
+  position {
+    x: 9
+    y: 0
+    z: 43
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{304e3392-f625-48f9-991c-5626faabe1fa}"
+  name: "DJ"
+  position {
+    x: -38
+    y: 3
+    z: 5
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{441ba54f-8d84-483d-881c-836a66605400}"
+  name: "Client - D"
+  position {
+    x: -16
+    y: 0
+    z: 17
+  }
+  orientation {
+    w: -0.10452846348523206
+    x: 0
+    y: 0.99452189534540492
+    z: -0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{47c44e8d-b6aa-428d-a5df-843115c0f111}"
+  name: "Client 2 - D"
+  position {
+    x: -16
+    y: 0
+    z: 13
+  }
+  orientation {
+    w: 0.13052619203364857
+    x: 0
+    y: 0.99144486139835086
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{77ea494a-b3c7-4dee-92a7-1dadc52d9731}"
+  name: "Client 3 - D"
+  position {
+    x: -17
+    y: 0
+    z: 15
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{d0a3c336-827b-4976-a808-18912f4e6d54}"
+  name: "Client 4 - D"
+  position {
+    x: -17
+    y: 0
+    z: 11
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{e75a9f60-7d78-4001-8509-4f37c75a8e73}"
+  name: "Client 5 - D"
+  position {
+    x: -18
+    y: 0
+    z: 8
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{632f56fd-340d-4380-b639-99161e30f3ec}"
+  name: "Client 6 - D"
+  position {
+    x: -17
+    y: 0
+    z: 6
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{36ef7cf5-631b-46a6-ae1c-0758d017742e}"
+  name: "Client 7 - D"
+  position {
+    x: -17
+    y: 0
+    z: 0
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{6e7fb869-8c5b-4ed6-8dc4-20f3969e03fe}"
+  name: "Client 8 - D"
+  position {
+    x: -15
+    y: 0
+    z: -1
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{88f96573-2095-4d1e-83d9-00aaea345cd5}"
+  name: "Client 9 - D"
+  position {
+    x: -16
+    y: 0
+    z: -2
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{f8460dc0-466d-40a4-9c25-13f749d5afc7}"
+  name: "Client 10 - D"
+  position {
+    x: -18
+    y: 0
+    z: 13
+  }
+  orientation {
+    w: 0.13052619203364857
+    x: 0
+    y: 0.99144486139835086
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{9c01a531-4924-4f50-be58-a73c2f0e03db}"
+  name: "Client 11 - D"
+  position {
+    x: -17
+    y: 0
+    z: 2
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{e94c0ea8-21e9-4b8d-baf7-c4ab0ee3490b}"
+  name: "Client 12 - D"
+  position {
+    x: -16
+    y: 0
+    z: 4
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{09c871f4-d17e-40a0-b2cf-ba6c59f0fc48}"
+  name: "Client 13 - D"
+  position {
+    x: -18
+    y: 0
+    z: 4
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{8d4e8a4b-77d5-416b-86a2-f718b78db00e}"
+  name: "Client 14 - D"
+  position {
+    x: -15
+    y: 0
+    z: 6
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{7890ffbe-07be-4073-80a1-db4f54f8f940}"
+  name: "Client 15 - D"
+  position {
+    x: -16
+    y: 0
+    z: 9
+  }
+  orientation {
+    w: 0.15643446485791035
+    x: 0
+    y: 0.98768834062401445
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{74261768-47bf-4222-84e5-aacd2fbc9940}"
+  name: "Client 16 - T"
+  position {
+    x: 42.5
+    y: 0
+    z: 25
+  }
+  orientation {
+    w: -2.0510342851533115e-010
+    x: -0
+    y: -1
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{592ebf38-9562-4fec-937c-b9e75bf59343}"
+  name: "Client 17 - T"
+  position {
+    x: 40
+    y: 0
+    z: 27.5
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{bee42843-c295-41e1-babd-a51cedc36018}"
+  name: "Client 18 - T"
+  position {
+    x: 40
+    y: 0
+    z: 22.5
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: -0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{f44c2c7f-6262-4b20-8f1f-dd3ed6392efa}"
+  name: "Client 19 - T"
+  position {
+    x: 37.5
+    y: 0
+    z: 25
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{c607523f-9d1b-4635-8b3a-260062b1acdc}"
+  name: "Client 20 - CM"
+  position {
+    x: 24.2
+    y: 0
+    z: -47.5
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{bebecc72-c8fa-4c16-abe2-3458ad1823b2}"
+  name: "Client 21 - CM"
+  position {
+    x: 27.2
+    y: 0
+    z: -47.5
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{532284b9-9a40-4ab9-98ae-3b10497c4751}"
+  name: "Client 22 - CM"
+  position {
+    x: 39.8
+    y: 0
+    z: -47.5
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{9516b741-8519-4198-a2a6-aacdf02046d8}"
+  name: "Client 23 - CF"
+  position {
+    x: 4
+    y: 0
+    z: -47.5
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{61d159e1-6033-4248-988d-ef3c2b5d3962}"
+  name: "Client 24 - CF"
+  position {
+    x: 8.5
+    y: 0
+    z: -47.5
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{216caa48-e604-477a-af11-184e9cdabe9e}"
+  name: "Client 25 - CF"
+  position {
+    x: 13
+    y: 0
+    z: -47.5
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: 0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{2a5cd9fa-6c76-49b9-998f-056ac202844a}"
+  name: "Client 26 - T"
+  position {
+    x: 20.5
+    y: 0
+    z: 30
+  }
+  orientation {
+    w: -2.0510342851533115e-010
+    x: -0
+    y: -1
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{18b853e9-5269-424f-92ee-6f87b3af4fc7}"
+  name: "Client 27 - T"
+  position {
+    x: 15.5
+    y: 0
+    z: 30
+  }
+  orientation {
+    w: 1
+    x: 0
+    y: 0
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{e0e7faca-7cdf-4339-a933-3c8d9c07d3aa}"
+  name: "Client 28 - T"
+  position {
+    x: 28.5
+    y: 0
+    z: 22.5
+  }
+  orientation {
+    w: 0.92387953249166432
+    x: 0
+    y: 0.3826834324124625
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{a6e7743f-1160-46d2-abf6-c99702e699e1}"
+  name: "Client 29 - T"
+  position {
+    x: 27.5
+    y: 0
+    z: 18
+  }
+  orientation {
+    w: 0.92387953249166432
+    x: 0
+    y: -0.3826834324124625
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}
+entity {
+  prototype: "prototypes/client.mlent"
+  id: "{12295860-4983-4501-bccb-e7ab2a47a727}"
+  name: "Client 30 - T"
+  position {
+    x: 30
+    y: 0
+    z: 17.5
+  }
+  orientation {
+    w: 0.70710678111403247
+    x: 0
+    y: -0.70710678125906257
+    z: 0
+  }
+  usePosition: true
+  useOrientation: true
+}

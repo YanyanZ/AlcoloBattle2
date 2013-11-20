@@ -1,0 +1,113 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{7002c6fb-0476-4a0c-a3d1-fda058864cad}"
+name: "talk"
+description: ""
+children {
+  type: Node
+  name: "1ea6ce11-88e1-4c63-a8df-222b33416d2a"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "c3c329c3-0913-4d7f-836b-91dd50b81f10"
+      presentation {
+        itemTemplate: "BTParallelNode.qml"
+        position {
+          x: 5424.5
+          y: 2668.5
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ParallelNode
+          isActivated: true
+          [mlv.toolset.proto.ParallelNode.extension] {
+            statusCondition: StopAtFirstSuccess
+            retryTag: retryAll
+          }
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "4c6ce142-eb77-4eaa-8d30-98347b64755b"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -61.5
+              y: 177
+              z: 0
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: StringType
+                  name: "time"
+                  kbSelection: selectParameters
+                  stringValue: "duration"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "d8526163-48a3-4c9c-b7aa-59ff8400280e"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 65
+              y: 176
+              z: 0
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "debugOut"
+                parameters {
+                  type: DoubleType
+                  name: "target.y"
+                  kbSelection: plainValue
+                  doubleValue: 3.5
+                }
+                parameters {
+                  type: StringType
+                  name: "text"
+                  kbSelection: selectParameters
+                  stringValue: "caption"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,344 @@
+<scene formatVersion="1.0.0">
+    <!--environment-->
+    <environment>
+        <SceneManager name="SceneManager" id="" type="OctreeSceneManager" />
+        <colourAmbient r="0" g="0" b="0" a="0" />
+        <!--Skys-->
+        <skyBox active="true" drawfirst="true" material="ML/SkyBox" distance="300" />
+        <fog mode="none" start="0" end="1000" density="0">
+            <colour r="0.5" g="0.5" b="0.5" a="1" />
+        </fog>
+        <viewport name="Viewport1" id="1" index="1">
+            <colour r="0.5" g="0.5" b="0.5" a="1" />
+        </viewport>
+        <camera name="Camera" viewMode="0" polyMode="3" fov="39.76789">
+            <clipping near="0.3" far="1000" />
+            <position x="100" y="25" z="0" />
+            <rotation qw="-0.6963643" qx="0.1227878" qy="-0.6963643" qz="-0.1227878" />
+        </camera>
+    </environment>
+    <light name="Light" id="Light" type="directional">
+        <directionVector x="0.2" y="-1" z="0.2" />
+    </light>
+	
+    <!-- Ground -->
+    <nodes>
+        <node name="Ground" id="Ground">
+            <position x="0" y="-0.5" z="0" />
+            <rotation qw="1" qx="0" qy="0" qz="0" />
+            <scale x="100" y="1" z="100" />
+            <entity name="Ground" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+        <node name="Mur0" id="Mur0">
+            <position x="0" y="4" z="-50" />
+            <scale x="100" y="10" z="1" />
+
+            <entity name="Mur0" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+        <node name="Mur1" id="Mur1">
+            <position x="0" y="4" z="50" />
+            <scale x="100" y="10" z="1" />
+            <entity name="Mur1" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+        <node name="Mur2" id="Mur2">
+            <position x="-50" y="4" z="0" />
+            <scale x="1" y="10" z="100" />
+            <entity name="Mur2" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		
+		<!-- Tables -->
+		<node name="Table0" id="Table0">
+            <position x="30" y="0" z="20" />
+			<scale x="0.08" y="0.08" z="0.08" />
+            <entity name="Table0" meshFile="table.mesh" materialFile="IndigoColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Table1" id="Table1">
+            <position x="20" y="0" z="18" />
+			<scale x="0.08" y="0.08" z="0.08" />
+            <entity name="Table1" meshFile="table.mesh" materialFile="IndigoColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Table2" id="Table2">
+            <position x="18" y="0" z="30" />
+			<scale x="0.08" y="0.08" z="0.08" />
+            <entity name="Table2" meshFile="table.mesh" materialFile="IndigoColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Table3" id="Table3">
+            <position x="40" y="0" z="25" />
+			<scale x="0.08" y="0.08" z="0.08" />
+            <entity name="Table3" meshFile="table.mesh" materialFile="IndigoColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Table4" id="Table4">
+            <position x="30" y="0" z="30" />
+			<scale x="0.08" y="0.08" z="0.08" />
+            <entity name="Table4" meshFile="table.mesh" materialFile="IndigoColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		
+		<!-- Chiottes Mecs-->
+        <node name="cMur0" id="cMur0">
+            <position x="19" y="4" z="-43" />
+            <scale x="1" y="10" z="15" />
+            <entity name="cMur0" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+        <node name="cMur1" id="cMur1">
+            <position x="32" y="1.5" z="-48" />
+            <scale x="0.1" y="3.5" z="5" />
+            <entity name="cMur1" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+        <node name="cMur2" id="cMur2">
+            <position x="28.5" y="4" z="-35" />
+            <scale x="20" y="10" z="1" />
+            <entity name="cMur2" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+       <node name="cMur3" id="cMur3">
+            <position x="46" y="4" z="-35" />
+            <scale x="8" y="10" z="1" />
+            <entity name="cMur3" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Urinal0" id="Urinal0">
+            <position x="30" y="1.5" z="-49.7" />
+			<scale x="0.05" y="0.05" z="0.05" />
+            <entity name="Urinal0" meshFile="urinal.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Urinal1" id="Urinal1">
+            <position x="27" y="1.5" z="-49.7" />
+			<scale x="0.05" y="0.05" z="0.05" />
+            <entity name="Urinal1" meshFile="urinal.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Urinal2" id="Urinal2">
+            <position x="24" y="1.5" z="-49.7" />
+			<scale x="0.05" y="0.05" z="0.05" />
+            <entity name="Urinal2" meshFile="urinal.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Urinal3" id="Urinal3">
+            <position x="21" y="1.5" z="-49.7" />
+			<scale x="0.05" y="0.05" z="0.05" />
+            <entity name="Urinal3" meshFile="urinal.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Lavabo0" id="Lavabo0">
+            <position x="37" y="-5" z="-49" />
+			<scale x="0.2" y="0.2" z="0.2" />
+            <entity name="Lavabo0" meshFile="lavabo.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Lavabo1" id="Lavabo1">
+            <position x="41.5" y="-5" z="-49" />
+			<scale x="0.2" y="0.2" z="0.2" />
+            <entity name="Lavabo1" meshFile="lavabo.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Lavabo2" id="Lavabo2">
+            <position x="46" y="-5" z="-49" />
+			<scale x="0.2" y="0.2" z="0.2" />
+            <entity name="Lavabo2" meshFile="lavabo.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		
+		<!-- Chiottes Femmes-->
+		<node name="Toilette0" id="Toilette0">
+			<rotation qw="0.7071067811865476" qx="0" qy="0.7071067811865476" qz="0" />
+            <position x="0" y="0" z="-49" />
+			<scale x="0.03" y="0.03" z="0.03" />
+            <entity name="Toilette0" meshFile="toilette.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Toilette1" id="Toilette1">
+			<rotation qw="0.7071067811865476" qx="0" qy="0.7071067811865476" qz="0" />
+            <position x="-3" y="0" z="-49" />
+			<scale x="0.03" y="0.03" z="0.03" />
+            <entity name="Toilette1" meshFile="toilette.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="Toilette2" id="Toilette2">
+			<rotation qw="0.7071067811865476" qx="0" qy="0.7071067811865476" qz="0" />
+            <position x="-6" y="0" z="-49" />
+			<scale x="0.03" y="0.03" z="0.03" />
+            <entity name="Toilette2" meshFile="toilette.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="cFMur1" id="cFMur1">
+            <position x="1.5" y="3" z="-48" />
+            <scale x="0.1" y="6" z="5" />
+            <entity name="cFMur1" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="cFMur2" id="cFMur2">
+            <position x="-1.5" y="3" z="-48" />
+            <scale x="0.1" y="6" z="5" />
+            <entity name="cFMur2" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="cFMur3" id="cFMur3">
+            <position x="-4.5" y="3" z="-48" />
+            <scale x="0.1" y="6" z="5" />
+            <entity name="cFMur3" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+        <node name="cFMur4" id="cMur4">
+            <position x="-7.8" y="4" z="-43" />
+            <scale x="1" y="10" z="15" />
+            <entity name="cMur4" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+        <node name="cFMur5" id="cMur5">
+            <position x="3.2" y="4" z="-35" />
+            <scale x="23" y="10" z="1" />
+            <entity name="cMur5" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="FLavabo0" id="FLavabo0">
+            <position x="6" y="-5" z="-49" />
+			<scale x="0.2" y="0.2" z="0.2" />
+            <entity name="FLavabo0" meshFile="lavabo.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="FLavabo1" id="FLavabo1">
+            <position x="10.5" y="-5" z="-49" />
+			<scale x="0.2" y="0.2" z="0.2" />
+            <entity name="FLavabo1" meshFile="lavabo.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="FLavabo2" id="FLavabo2">
+            <position x="15" y="-5" z="-49" />
+			<scale x="0.2" y="0.2" z="0.2" />
+            <entity name="FLavabo2" meshFile="lavabo.mesh" materialFile="BlueColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+
+		<!-- Bar -->
+		<node name="bar0" id="bar0">
+			<rotation qw="0.7071067811865476" qx="0" qy="0.7071067811865476" qz="0" />
+            <position x="48" y="0" z="48" />
+			<scale x="0.01" y="0.01" z="0.01" />
+            <entity name="bar0" meshFile="bar.mesh" materialFile="GreyColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="cBar0" id="cBar0">
+            <position x="47" y="0" z="48.5" />
+            <scale x="1.5" y="5" z="2" />
+            <entity name="cBar0" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="bar1" id="bar1">
+			<rotation qw="0.7071067811865476" qx="0" qy="0.7071067811865476" qz="0" />
+            <position x="20" y="0" z="48" />
+			<scale x="0.01" y="0.01" z="0.01" />
+            <entity name="bar1" meshFile="bar.mesh" materialFile="GreyColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="cBar1" id="cBar1">
+            <position x="19.2" y="0" z="48.5" />
+            <scale x="1.5" y="5" z="2" />
+            <entity name="cBar1" meshFile="cube.mesh" materialFile="GrayColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+
+		<!-- Stage -->
+		<node name="stage0" id="stage0">
+            <position x="-40" y="1.5" z="6" />
+			<scale x="0.5" y="1" z="1.5" />
+            <entity name="stage0" meshFile="stage.mesh" materialFile="GreyColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="dj" id="dj">
+			<rotation qw="0.7071067811865476" qx="0" qy="0.7071067811865476" qz="0" />
+            <position x="-42" y="3" z="-5" />
+			<scale x="0.3" y="0.3" z="0.3" />
+            <entity name="dj" meshFile="dj.mesh" materialFile="GreyColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="sound0" id="sound0">
+			<rotation qw="0.9238795325112867" qx="0" qy="0.3826834323650897" qz="0" />
+            <position x="-33" y="0" z="-11" />
+			<scale x="1.5" y="1.5" z="1.5" />
+            <entity name="sound0" meshFile="sound.mesh" materialFile="GreyColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="sound1" id="sound1">
+			<rotation qw="0.7071067811865476" qx="0" qy="0.7071067811865476" qz="0" />
+            <position x="-31" y="0" z="32" />
+			<scale x="1.5" y="1.5" z="1.5" />
+            <entity name="sound1" meshFile="sound.mesh" materialFile="GreyColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="barrier0" id="barrier0">
+			<rotation qw="0.9238795325112867" qx="0" qy="-0.3826834323650897" qz="0" />
+            <position x="-13" y="0" z="-36" />
+			<scale x="0.002" y="0.002" z="0.00155" />
+            <entity name="barrier0" meshFile="barrier.mesh" materialFile="GreyColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		
+		<!-- Defence -->
+		<node name="gun0" id="gun0">
+            <position x="-28" y="0" z="37.3" />
+			<scale x="0.002" y="0.002" z="0.002" />
+            <entity name="gun0" meshFile="chaingun.mesh" materialFile="GreyColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+		<node name="gun1" id="gun1">
+            <position x="-28" y="0" z="45" />
+			<scale x="0.002" y="0.002" z="0.002" />
+            <entity name="gun1" meshFile="chaingun.mesh" materialFile="GreyColor" static="true">
+                <subentity />
+            </entity>
+        </node>
+    </nodes>
+</scene>
