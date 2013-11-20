@@ -124,9 +124,9 @@ namespace templates
 			{
 				const mlv::utils::DynamicObject& entityKnowledge = knowledge_->getFramework().getEntityKnowledge(simulation_->getEntities()[i]);
 
-				if (entityKnowledge.hasProperty ("battleIndex") && entityKnowledge.getInt ("battleIndex") != -1 && entityKnowledge.getBool ("fistBattle"))
+				if (entityKnowledge.hasProperty ("battleIndex") && entityKnowledge.getInt ("battleIndex") != -1 && entityKnowledge.getBool ("gotoBattle"))
 				{
-					knowledge_->getFramework().getEntityWorkingKnowledge(simulation_->getEntities()[i]).setBool ("fistBattle", false);
+					knowledge_->getFramework().getEntityWorkingKnowledge(simulation_->getEntities()[i]).setBool ("gotoBattle", false);
 
 					if (entityKnowledge.getInt ("battleIndex") == 0)
 						globalKnowledge.setInt ("battleCount[0]", globalKnowledge.getInt ("battleCount[0]") + 1);

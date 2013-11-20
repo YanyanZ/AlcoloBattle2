@@ -55,7 +55,7 @@ root {
     }
   }
   objectValue {
-    key: "isAlive"
+    key: "gotoBattle"
     value {
       type: Bool
       boolValue: true
