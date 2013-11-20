@@ -12,4 +12,11 @@ root {
       intValue: 4
     }
   }
+  objectValue {
+    key: "team"
+    value {
+      type: String
+      stringValue: "barman"
+    }
+  }
 }

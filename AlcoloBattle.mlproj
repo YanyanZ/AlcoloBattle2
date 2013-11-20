@@ -14,6 +14,14 @@ folder {
       location: "decision/buy_drink.mlbt"
     }
     file {
+      name: "fight.mlbt"
+      location: "decision/fight.mlbt"
+    }
+    file {
+      name: "go_dance.mlbt"
+      location: "decision/go_dance.mlbt"
+    }
+    file {
       name: "talk.mlbt"
       location: "decision/talk.mlbt"
     }

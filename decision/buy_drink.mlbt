@@ -1515,12 +1515,133 @@ children {
         }
         children {
           type: Node
+          name: "d9f0d9ea-ec54-480c-ad78-7c36868a58b1"
+          presentation {
+            itemTemplate: "BTSequenceNode.qml"
+            position {
+              x: 1480.08441836177
+              y: 395.28164859237449
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SequenceNode
+              isActivated: true
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "3b4b0700-c988-4bf6-bfdb-879b1f45d134"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -22.353601015849563
+                  y: 163.9720023976538
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "Increment"
+                    parameters {
+                      type: StringType
+                      name: "key"
+                      kbSelection: plainValue
+                      stringValue: "levelDrunk"
+                    }
+                    parameters {
+                      type: IntType
+                      name: "value"
+                      kbSelection: plainValue
+                      intValue: 1
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "4eabd07e-4edb-4988-a526-3ddad447c33d"
+              presentation {
+                itemTemplate: "BTConditionNode.qml"
+                position {
+                  x: 84.421792273871688
+                  y: 158.54274511173571
+                  z: 0
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ConditionNodeGeneric
+                  isActivated: true
+                  [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                    operator: Equal
+                    leftOperand {
+                      source: selectLocalKB
+                      key: "levelDrunk"
+                    }
+                    rightOperand {
+                      source: selectLocalKB
+                      key: "thresholdDrunk"
+                    }
+                  }
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "2f3ed535-7ea3-48bc-95c5-5754b13271e6"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 3.6195048572790256
+                      y: 155.63870886298491
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "SetEntityBoolean"
+                        parameters {
+                          type: StringType
+                          name: "key"
+                          kbSelection: plainValue
+                          stringValue: "drunk"
+                        }
+                        parameters {
+                          type: BoolType
+                          name: "value"
+                          kbSelection: plainValue
+                          boolValue: true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
           name: "af633daf-0e87-427a-9e6a-f43011c1de47"
           presentation {
             itemTemplate: "BTActionNode.qml"
             position {
-              x: 1471.121645806812
-              y: 330.58913388917108
+              x: 2204.4828033906851
+              y: 372.43583967664881
               z: nan
             }
             label: "Do nothing"

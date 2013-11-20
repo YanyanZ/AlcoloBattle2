@@ -19,6 +19,8 @@ decision {
   btFile: "decision/bt.mlbt"
   btFile: "decision/client.mlbt"
   btFile: "decision/embedded/buy_drink.mlbt"
+  btFile: "decision/embedded/fight.mlbt"
+  btFile: "decision/embedded/go_dance.mlbt"
   btFile: "decision/embedded/talk.mlbt"
   btFile: "decision/secu.mlbt"
 }

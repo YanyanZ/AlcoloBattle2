@@ -20,6 +20,13 @@ root {
     }
   }
   objectValue {
+    key: "team"
+    value {
+      type: String
+      stringValue: "secu"
+    }
+  }
+  objectValue {
     key: "test"
     value {
       type: Int
