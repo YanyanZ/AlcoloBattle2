@@ -19,4 +19,11 @@ root {
       boolValue: false
     }
   }
+  objectValue {
+    key: "test"
+    value {
+      type: Int
+      intValue: 0
+    }
+  }
 }
