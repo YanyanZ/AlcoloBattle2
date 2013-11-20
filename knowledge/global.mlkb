@@ -6,7 +6,7 @@ version {
 root {
   type: Object
   objectValue {
-    key: "battles"
+    key: "battleCount"
     value {
       type: Array
       arrayValue {
@@ -22,8 +22,110 @@ root {
         intValue: 0
       }
       arrayValue {
-        type: Bool
-        boolValue: false
+        type: Int
+        intValue: 0
+      }
+    }
+  }
+  objectValue {
+    key: "battlePos"
+    value {
+      type: Array
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 7
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 24
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 18
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 9
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 33
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 12
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: 45
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 17
+          }
+        }
       }
     }
   }
@@ -152,6 +254,84 @@ root {
           value {
             type: Int
             intValue: 38
+          }
+        }
+      }
+    }
+  }
+  objectValue {
+    key: "dances"
+    value {
+      type: Array
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: -1
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: -17
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: -11
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 4
+          }
+        }
+      }
+      arrayValue {
+        type: Object
+        objectValue {
+          key: "x"
+          value {
+            type: Int
+            intValue: -11
+          }
+        }
+        objectValue {
+          key: "y"
+          value {
+            type: Int
+            intValue: 0
+          }
+        }
+        objectValue {
+          key: "z"
+          value {
+            type: Int
+            intValue: 30
           }
         }
       }

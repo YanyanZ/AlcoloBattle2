@@ -9,7 +9,7 @@ namespace alcolo
 	
         class IncrementParams : public mlv::utils::StaticObject
         {
-            MLV_DEFINE_STATIC_OBJECT(alcolo::IncrementParams,"1e74c1ca-c3cc-4739-8dcc-49744428864e",setMetadata);
+            MLV_DEFINE_STATIC_OBJECT(alcolo::IncrementParams,"1e74c1ca-c3cc-4739-8dcc-49744428864f",setMetadata);
         public:
             IncrementParams();
 			mlv::utils::String key;

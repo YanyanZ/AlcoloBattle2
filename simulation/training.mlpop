@@ -5,7 +5,7 @@ version {
 }
 entity {
   prototype: "prototypes/securit\351.mlent"
-  id: "{d34229ce-9aa8-4fda-8455-9d7e887dd23c}"
+  id: "{341e1355-b9ae-4ebf-a743-99654261e733}"
   name: "Secu"
   position {
     x: 21
@@ -22,8 +22,8 @@ entity {
   useOrientation: true
 }
 entity {
-  prototype: "prototypes/barman.mlent"
-  id: "{49c5491d-1ad4-435e-a1cc-839b6f315470}"
+  prototype: "prototypes/barman4.mlent"
+  id: "{1246495f-45a1-4480-8100-09b555a87c24}"
   name: "Barman"
   position {
     x: 41
@@ -41,8 +41,8 @@ entity {
 }
 entity {
   prototype: "prototypes/client.mlent"
-  id: "{0601aa9f-1d5b-4ffe-b2ed-9a7309c1716a}"
-  name: "Gen"
+  id: "{302db145-6b63-49bc-bff9-0eedc7ba5cd6}"
+  name: "Client"
   position {
     x: -16
     y: 0
@@ -51,7 +51,7 @@ entity {
   orientation {
     w: 0.10452846307727237
     x: 0
-    y: 0.99452189538828317
+    y: -0.99452189538828317
     z: 0
   }
   usePosition: true
