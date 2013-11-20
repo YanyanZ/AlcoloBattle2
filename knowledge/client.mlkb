@@ -58,8 +58,7 @@ root {
     key: "isAlive"
     value {
       type: Bool
-<<<<<<< HEAD
-      boolValue: false
+      boolValue: true
     }
   }
   objectValue {
@@ -81,9 +80,6 @@ root {
     value {
       type: Bool
       boolValue: false
-=======
-      boolValue: true
->>>>>>> e10aa12fb1c15759535f9900f221e671d20f2f83
     }
   }
   objectValue {
