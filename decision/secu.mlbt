@@ -394,26 +394,116 @@ children {
         }
         children {
           type: Node
-          name: "cd47b9c3-2694-4ce6-ab8a-5dca9f778a5a"
+          name: "eaacb97f-6015-4f98-b829-ea805125f851"
           presentation {
-            itemTemplate: "BTEmbeddedNode.qml"
+            itemTemplate: "BTConditionNode.qml"
             position {
-              x: 155.35363631346036
-              y: 118.90194511141931
+              x: 301.82650699412306
+              y: 149.27724021006907
               z: nan
             }
           }
           properties {
             type: BTNodeProperties
             [mlv.toolset.proto.BTNodeProperties.extension] {
-              type: BTEmbeddedBehaviorNode
+              type: ConditionNodeGeneric
               isActivated: true
-              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
-                behaviorName {
-                  type: StringType
-                  name: ""
-                  kbSelection: plainValue
-                  stringValue: "decision/embedded/go_out.mlbt"
+              [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                operator: Equal
+                leftOperand {
+                  source: selectLocalKB
+                  key: "engaged"
+                }
+                rightOperand {
+                  source: plainValue
+                  value {
+                    type: boolean
+                    booleanValue: true
+                  }
+                }
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "c14b0dfa-a2ef-4e92-be46-eec8fddad2f1"
+              presentation {
+                itemTemplate: "BTSequenceNode.qml"
+                position {
+                  x: 17.405016268068721
+                  y: 135.9766895942862
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SequenceNode
+                  isActivated: true
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "cd47b9c3-2694-4ce6-ab8a-5dca9f778a5a"
+                  presentation {
+                    itemTemplate: "BTEmbeddedNode.qml"
+                    position {
+                      x: -33.722219019382464
+                      y: 121.83511387648014
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: BTEmbeddedBehaviorNode
+                      isActivated: true
+                      [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                        behaviorName {
+                          type: StringType
+                          name: ""
+                          kbSelection: plainValue
+                          stringValue: "decision/embedded/go_out.mlbt"
+                        }
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "ebb8d566-b9a9-4d4f-a3c0-b01d94d8f3ed"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 98.991030024640622
+                      y: 118.57167332621725
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "Increment"
+                        parameters {
+                          type: StringType
+                          name: "key"
+                          kbSelection: plainValue
+                          stringValue: "videurPlace"
+                        }
+                        parameters {
+                          type: IntType
+                          name: "value"
+                          kbSelection: plainValue
+                          intValue: -1
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }

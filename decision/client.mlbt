@@ -556,7 +556,7 @@ children {
                       type: ParallelNode
                       isActivated: true
                       [mlv.toolset.proto.ParallelNode.extension] {
-                        statusCondition: StopAtFirstFail
+                        statusCondition: StopAtFirstSuccess
                         retryTag: retryRunning
                       }
                     }
