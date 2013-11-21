@@ -24,34 +24,6 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "24bcf2f1-7c0a-495a-9dcc-49b6a462a32a"
-      presentation {
-        itemTemplate: "BTActionNode.qml"
-        position {
-          x: 5015.1603278234343
-          y: 2828.7872807335061
-          z: nan
-        }
-      }
-      properties {
-        type: BTNodeProperties
-        [mlv.toolset.proto.BTNodeProperties.extension] {
-          type: ActionNode
-          isActivated: false
-          [mlv.toolset.proto.ActionNode.extension] {
-            actionName: "wait"
-            parameters {
-              type: IntType
-              name: "time"
-              kbSelection: plainValue
-              intValue: 5
-            }
-          }
-        }
-      }
-    }
-    children {
-      type: Node
       name: "482e0dac-c0e7-4a77-827b-520786f5f2e8"
       presentation {
         itemTemplate: "BTSelectorPrio.qml"
