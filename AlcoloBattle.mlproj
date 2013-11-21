@@ -22,6 +22,10 @@ folder {
       location: "decision/go_dance.mlbt"
     }
     file {
+      name: "go_out.mlbt"
+      location: "decision/go_out.mlbt"
+    }
+    file {
       name: "talk.mlbt"
       location: "decision/talk.mlbt"
     }
