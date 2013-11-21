@@ -56,5 +56,5 @@ prototypeLibrary: "prototypes/barman3.mlent"
 prototypeLibrary: "prototypes/barman4.mlent"
 prototypeLibrary: "prototypes/client.mlent"
 prototypeLibrary: "prototypes/securit\351.mlent"
-population: "population/training.mlpop"
+population: "population/public.mlpop"
 debugger: false
