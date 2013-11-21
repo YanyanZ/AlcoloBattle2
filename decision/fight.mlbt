@@ -59,6 +59,450 @@ children {
               isActivated: true
             }
           }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "06b7882e-8870-4e1d-9926-e933567d3250"
+              presentation {
+                itemTemplate: "BTSequenceNode.qml"
+                position {
+                  x: 534.27999999999884
+                  y: 128.49999999999955
+                  z: 0
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SequenceNode
+                  isActivated: true
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "6798eca0-91a9-48c2-9fc7-d852098f67bc"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: -10.979999999999563
+                      y: 156.15999999999985
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "goto"
+                        parameters {
+                          type: StringType
+                          name: "target"
+                          kbSelection: SelectGlobalKB
+                          stringValue: "battlePos[3]"
+                        }
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "1898d90d-15b3-4a7a-802b-4ac3ab1451a6"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 87.840000000000146
+                      y: 153.7199999999998
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "Increment"
+                        parameters {
+                          type: StringType
+                          name: "key"
+                          kbSelection: plainValue
+                          stringValue: "battleIndex"
+                        }
+                        parameters {
+                          type: IntType
+                          name: "value"
+                          kbSelection: plainValue
+                          intValue: 4
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "1cfa2e90-1206-4c0e-8f19-ff91ff802b94"
+              presentation {
+                itemTemplate: "BTSequenceNode.qml"
+                position {
+                  x: 178.03999999999905
+                  y: 139.47999999999956
+                  z: 0
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SequenceNode
+                  isActivated: true
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "5ab3b2b5-12d9-4261-a690-21a6aa8a5194"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: -96.380000000000109
+                      y: 173.23999999999978
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "goto"
+                        parameters {
+                          type: StringType
+                          name: "target"
+                          kbSelection: SelectGlobalKB
+                          stringValue: "battlePos[2]"
+                        }
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "eee6c521-05d8-4a00-b288-af45c9db010d"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 1.2200000000002547
+                      y: 172.01999999999998
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "Increment"
+                        parameters {
+                          type: StringType
+                          name: "key"
+                          kbSelection: plainValue
+                          stringValue: "battleIndex"
+                        }
+                        parameters {
+                          type: IntType
+                          name: "value"
+                          kbSelection: plainValue
+                          intValue: 3
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "59b001c1-b532-43e6-a4d7-3c0f00e6f090"
+              presentation {
+                itemTemplate: "BTSequenceNode.qml"
+                position {
+                  x: -281.90000000000146
+                  y: 166.31999999999971
+                  z: 0
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SequenceNode
+                  isActivated: true
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "e2663438-4046-4339-83c3-36878f489e16"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: -68.320000000000618
+                      y: 147.61999999999944
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "goto"
+                        parameters {
+                          type: StringType
+                          name: "target"
+                          kbSelection: SelectGlobalKB
+                          stringValue: "battlePos[1]"
+                        }
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "06cce6d7-3731-4530-bc8c-b8a7ab888b5f"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 28.059999999999491
+                      y: 152.49999999999955
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "Increment"
+                        parameters {
+                          type: StringType
+                          name: "key"
+                          kbSelection: plainValue
+                          stringValue: "battleIndex"
+                        }
+                        parameters {
+                          type: IntType
+                          name: "value"
+                          kbSelection: plainValue
+                          intValue: 2
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "982f71a1-1d12-404f-b7c6-5ce5dfb944a4"
+              presentation {
+                itemTemplate: "BTSequenceNode.qml"
+                position {
+                  x: -712.56000000000131
+                  y: 150.45999999999958
+                  z: 0
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SequenceNode
+                  isActivated: true
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "d3ed032b-1acf-4c58-9e4e-0645c6c1bd4d"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: -75.640000000000327
+                      y: 163.48000000000002
+                      z: 0
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "goto"
+                        parameters {
+                          type: StringType
+                          name: "target"
+                          kbSelection: SelectGlobalKB
+                          stringValue: "battlePos[0]"
+                        }
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "05a17806-ad50-4f78-a3c9-a80da0653e0a"
+                  presentation {
+                    itemTemplate: "BTActionNode.qml"
+                    position {
+                      x: 24.399999999999636
+                      y: 164.69999999999982
+                      z: 0
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: ActionNode
+                      isActivated: true
+                      [mlv.toolset.proto.ActionNode.extension] {
+                        actionName: "Increment"
+                        parameters {
+                          type: StringType
+                          name: "key"
+                          kbSelection: plainValue
+                          stringValue: "battleIndex"
+                        }
+                        parameters {
+                          type: IntType
+                          name: "value"
+                          kbSelection: plainValue
+                          intValue: 1
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "4695861c-f6b0-4800-b43d-828eacb7c02a"
+          presentation {
+            itemTemplate: "BTSequenceNode.qml"
+            position {
+              x: 889.23999999999887
+              y: 178.75999999999931
+              z: 0
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SequenceNode
+              isActivated: true
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "279d1331-5421-4087-a013-5e06feee3d42"
+              presentation {
+                itemTemplate: "BTEmbeddedNode.qml"
+                position {
+                  x: -48.800000000000182
+                  y: 209.84000000000015
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: BTEmbeddedBehaviorNode
+                  isActivated: false
+                  [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                    behaviorName {
+                      type: StringType
+                      name: ""
+                      kbSelection: plainValue
+                      stringValue: "decision/embedded/talk.mlbt"
+                    }
+                    parameters {
+                      type: StringType
+                      name: "caption"
+                      kbSelection: plainValue
+                      stringValue: "FIGHT"
+                    }
+                    parameters {
+                      type: IntType
+                      name: "duration"
+                      kbSelection: plainValue
+                      intValue: 10
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "3d476d78-9374-4fe8-b88d-79b4280e31be"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 42.699999999999818
+                  y: 209.84000000000015
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: false
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "stall"
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "c816aef0-f6fa-44cf-8540-d7d08dd751d0"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 147.49999999999909
+                  y: 209.86000000000013
+                  z: 0
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "debugOut"
+                    parameters {
+                      type: StringType
+                      name: "text"
+                      kbSelection: plainValue
+                      stringValue: "FIGHT"
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

@@ -149,27 +149,38 @@ children {
         }
         children {
           type: Node
-          name: "17ad7178-40e1-4508-9675-8da27ff10b8a"
+          name: "4f29fb8b-4cf5-458b-96cb-5826e28dda36"
           presentation {
-            itemTemplate: "BTActionNode.qml"
+            itemTemplate: "BTEmbeddedNode.qml"
             position {
-              x: 315.5
-              y: 258.5
+              x: 263.05965141612069
+              y: 122.79183006535868
               z: 0
             }
           }
           properties {
             type: BTNodeProperties
             [mlv.toolset.proto.BTNodeProperties.extension] {
-              type: ActionNode
+              type: BTEmbeddedBehaviorNode
               isActivated: true
-              [mlv.toolset.proto.ActionNode.extension] {
-                actionName: "debugOut"
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/embedded/talk.mlbt"
+                }
                 parameters {
                   type: StringType
-                  name: "text"
+                  name: "caption"
                   kbSelection: plainValue
                   stringValue: "DANCE"
+                }
+                parameters {
+                  type: IntType
+                  name: "duration"
+                  kbSelection: plainValue
+                  intValue: 10
                 }
               }
             }
