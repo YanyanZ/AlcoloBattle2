@@ -452,34 +452,6 @@ children {
                 }
               }
             }
-            children {
-              type: Node
-              name: "c816aef0-f6fa-44cf-8540-d7d08dd751d0"
-              presentation {
-                itemTemplate: "BTActionNode.qml"
-                position {
-                  x: 168.38000000000011
-                  y: 172.73999999999978
-                  z: 0
-                }
-              }
-              properties {
-                type: BTNodeProperties
-                [mlv.toolset.proto.BTNodeProperties.extension] {
-                  type: ActionNode
-                  isActivated: false
-                  [mlv.toolset.proto.ActionNode.extension] {
-                    actionName: "debugOut"
-                    parameters {
-                      type: StringType
-                      name: "text"
-                      kbSelection: plainValue
-                      stringValue: "FIGHT"
-                    }
-                  }
-                }
-              }
-            }
           }
         }
       }
