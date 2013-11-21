@@ -415,12 +415,12 @@ children {
           [mlv.toolset.proto.Node.extension] {
             children {
               type: Node
-              name: "279d1331-5421-4087-a013-5e06feee3d42"
+              name: "cdd22719-9ce5-4e8f-9da0-f5ed7613862c"
               presentation {
                 itemTemplate: "BTEmbeddedNode.qml"
                 position {
-                  x: -48.800000000000182
-                  y: 209.84000000000015
+                  x: -14.900000000000546
+                  y: 200.57999999999993
                   z: nan
                 }
               }
@@ -428,7 +428,7 @@ children {
                 type: BTNodeProperties
                 [mlv.toolset.proto.BTNodeProperties.extension] {
                   type: BTEmbeddedBehaviorNode
-                  isActivated: false
+                  isActivated: true
                   [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
                     behaviorName {
                       type: StringType
@@ -447,56 +447,6 @@ children {
                       name: "duration"
                       kbSelection: plainValue
                       intValue: 10
-                    }
-                  }
-                }
-              }
-            }
-            children {
-              type: Node
-              name: "3d476d78-9374-4fe8-b88d-79b4280e31be"
-              presentation {
-                itemTemplate: "BTActionNode.qml"
-                position {
-                  x: 42.699999999999818
-                  y: 209.84000000000015
-                  z: nan
-                }
-              }
-              properties {
-                type: BTNodeProperties
-                [mlv.toolset.proto.BTNodeProperties.extension] {
-                  type: ActionNode
-                  isActivated: false
-                  [mlv.toolset.proto.ActionNode.extension] {
-                    actionName: "stall"
-                  }
-                }
-              }
-            }
-            children {
-              type: Node
-              name: "c816aef0-f6fa-44cf-8540-d7d08dd751d0"
-              presentation {
-                itemTemplate: "BTActionNode.qml"
-                position {
-                  x: 147.49999999999909
-                  y: 209.86000000000013
-                  z: 0
-                }
-              }
-              properties {
-                type: BTNodeProperties
-                [mlv.toolset.proto.BTNodeProperties.extension] {
-                  type: ActionNode
-                  isActivated: true
-                  [mlv.toolset.proto.ActionNode.extension] {
-                    actionName: "debugOut"
-                    parameters {
-                      type: StringType
-                      name: "text"
-                      kbSelection: plainValue
-                      stringValue: "FIGHT"
                     }
                   }
                 }
