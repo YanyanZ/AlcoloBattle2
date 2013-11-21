@@ -113,7 +113,7 @@ children {
                           source: plainValue
                           value {
                             type: integer
-                            integerValue: 1
+                            integerValue: 0
                           }
                         }
                       }
@@ -602,7 +602,7 @@ children {
                           source: plainValue
                           value {
                             type: integer
-                            integerValue: 1
+                            integerValue: 0
                           }
                         }
                       }
@@ -1091,7 +1091,7 @@ children {
                           source: plainValue
                           value {
                             type: integer
-                            integerValue: 1
+                            integerValue: 0
                           }
                         }
                       }
@@ -1580,7 +1580,7 @@ children {
                           source: plainValue
                           value {
                             type: integer
-                            integerValue: 1
+                            integerValue: 0
                           }
                         }
                       }
