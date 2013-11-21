@@ -541,27 +541,90 @@ children {
               [mlv.toolset.proto.Node.extension] {
                 children {
                   type: Node
-                  name: "15e2207a-66c7-4368-a10c-7eedacbb30d1"
+                  name: "1eb1d48e-5b55-4d03-81aa-dabfae29374f"
                   presentation {
-                    itemTemplate: "BTActionNode.qml"
+                    itemTemplate: "BTParallelNode.qml"
                     position {
-                      x: 23.603682455978742
-                      y: 121.65706366627614
-                      z: 0
+                      x: 20.55993036048767
+                      y: 126.84521072364282
+                      z: nan
                     }
                   }
                   properties {
                     type: BTNodeProperties
                     [mlv.toolset.proto.BTNodeProperties.extension] {
-                      type: ActionNode
+                      type: ParallelNode
                       isActivated: true
-                      [mlv.toolset.proto.ActionNode.extension] {
-                        actionName: "debugOut"
-                        parameters {
-                          type: StringType
-                          name: "text"
-                          kbSelection: plainValue
-                          stringValue: "Out"
+                      [mlv.toolset.proto.ParallelNode.extension] {
+                        statusCondition: StopAtFirstSuccess
+                        retryTag: retryRunning
+                      }
+                    }
+                  }
+                  [mlv.toolset.proto.Node.extension] {
+                    children {
+                      type: Node
+                      name: "de6c0b16-8a52-4bd5-a6ef-a0b43d172e68"
+                      presentation {
+                        itemTemplate: "BTEmbeddedNode.qml"
+                        position {
+                          x: -0.64329768461357162
+                          y: 161.22810150197893
+                          z: nan
+                        }
+                      }
+                      properties {
+                        type: BTNodeProperties
+                        [mlv.toolset.proto.BTNodeProperties.extension] {
+                          type: BTEmbeddedBehaviorNode
+                          isActivated: true
+                          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                            behaviorName {
+                              type: StringType
+                              name: ""
+                              kbSelection: plainValue
+                              stringValue: "decision/embedded/go_out.mlbt"
+                            }
+                          }
+                        }
+                      }
+                    }
+                    children {
+                      type: Node
+                      name: "4a5c002b-5d22-458e-ad02-7a6c8185bed6"
+                      presentation {
+                        itemTemplate: "BTEmbeddedNode.qml"
+                        position {
+                          x: 133.10505449236734
+                          y: 156.08393411055658
+                          z: nan
+                        }
+                      }
+                      properties {
+                        type: BTNodeProperties
+                        [mlv.toolset.proto.BTNodeProperties.extension] {
+                          type: BTEmbeddedBehaviorNode
+                          isActivated: true
+                          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                            behaviorName {
+                              type: StringType
+                              name: ""
+                              kbSelection: plainValue
+                              stringValue: "decision/embedded/talk.mlbt"
+                            }
+                            parameters {
+                              type: StringType
+                              name: "caption"
+                              kbSelection: plainValue
+                              stringValue: "aaaaa"
+                            }
+                            parameters {
+                              type: IntType
+                              name: "duration"
+                              kbSelection: plainValue
+                              intValue: 2
+                            }
+                          }
                         }
                       }
                     }

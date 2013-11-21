@@ -94,6 +94,7 @@ namespace templates
         {
             mlv::utils::DynamicObject& globalKnowledge = knowledge_->getFramework().getGlobalWorkingKnowledge();
 
+			// Bar interaction handling :
 			bool command1 = false;
 			bool command2 = false;
 			bool command3 = false;
@@ -117,6 +118,52 @@ namespace templates
 			globalKnowledge.setBool("command2", command2);
 			globalKnowledge.setBool("command3", command3);
 			globalKnowledge.setBool("command4", command4);
+
+			// Battle handling :
+			for (std::size_t i = 0; i < simulation_->countEntities() ; ++i)
+			{
+				const mlv::utils::DynamicObject& entityKnowledge = knowledge_->getFramework().getEntityKnowledge(simulation_->getEntities()[i]);
+
+				if (entityKnowledge.hasProperty ("battleIndex") && entityKnowledge.getInt ("battleIndex") != -1 && entityKnowledge.getBool ("gotoBattle"))
+				{
+					knowledge_->getFramework().getEntityWorkingKnowledge(simulation_->getEntities()[i]).setBool ("gotoBattle", false);
+
+					if (entityKnowledge.getInt ("battleIndex") == 0)
+						globalKnowledge.setInt ("battleCount[0]", globalKnowledge.getInt ("battleCount[0]") + 1);
+					if (entityKnowledge.getInt ("battleIndex") == 1)
+						globalKnowledge.setInt ("battleCount[1]", globalKnowledge.getInt ("battleCount[1]") + 1);
+					if (entityKnowledge.getInt ("battleIndex") == 2)
+						globalKnowledge.setInt ("battleCount[2]", globalKnowledge.getInt ("battleCount[2]") + 1);
+					if (entityKnowledge.getInt ("battleIndex") == 3)
+						globalKnowledge.setInt ("battleCount[3]", globalKnowledge.getInt ("battleCount[3]") + 1);
+				}
+
+				if (entityKnowledge.hasProperty ("videurPlace") && entityKnowledge.getInt ("videurPlace") != -1)
+				{
+					uint64_t videurPlace = entityKnowledge.getInt ("videurPlace");
+					knowledge_->getFramework().getEntityWorkingKnowledge(simulation_->getEntities()[i]).setInt ("videurPlace", -1);
+
+					for (std::size_t j = 0; j < simulation_->countEntities() ; ++j)
+					{
+						const mlv::utils::DynamicObject& entityKnowledge2 = knowledge_->getFramework().getEntityKnowledge(simulation_->getEntities()[j]);
+
+						if (entityKnowledge2.hasProperty ("battleIndex") && entityKnowledge2.getInt ("battleIndex") == videurPlace)
+						{
+							knowledge_->getFramework().getEntityWorkingKnowledge(simulation_->getEntities()[j]).setBool ("isAlive", false);
+
+
+							if (videurPlace == 0)
+								globalKnowledge.setInt ("battleCount[0]", 0);
+							if (videurPlace == 1)
+								globalKnowledge.setInt ("battleCount[1]", 0);
+							if (videurPlace == 2)
+								globalKnowledge.setInt ("battleCount[2]", 0);
+							if (videurPlace == 3)
+								globalKnowledge.setInt ("battleCount[3]", 0);
+						}
+					}
+				}
+			}
 
             return true;
         }

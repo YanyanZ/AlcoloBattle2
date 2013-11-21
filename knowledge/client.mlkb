@@ -13,6 +13,13 @@ root {
     }
   }
   objectValue {
+    key: "chatting"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
     key: "command1"
     value {
       type: Bool
@@ -48,10 +55,31 @@ root {
     }
   }
   objectValue {
+    key: "gotoBattle"
+    value {
+      type: Bool
+      boolValue: true
+    }
+  }
+  objectValue {
+    key: "hasADrink"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
     key: "isAlive"
     value {
       type: Bool
       boolValue: true
+    }
+  }
+  objectValue {
+    key: "isAttacked"
+    value {
+      type: Bool
+      boolValue: false
     }
   }
   objectValue {
@@ -72,7 +100,7 @@ root {
     key: "thresholdDrunk"
     value {
       type: Int
-      intValue: 10
+      intValue: 1
     }
   }
 }

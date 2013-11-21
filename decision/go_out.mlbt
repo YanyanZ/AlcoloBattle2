@@ -1,0 +1,75 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{6e4abec6-bf8a-4f49-a30a-e60c4e33ec80}"
+name: "go_out"
+description: ""
+children {
+  type: Node
+  name: "570a0d72-cafd-4478-9062-9911fa5c00f8"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "cd05c85f-ddd5-4cdd-bc66-515c4d385a43"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5467.5
+          y: 2665.5
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "87c83a29-19fa-4e16-a3b7-555ec5859368"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -7.5
+              y: 144.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "goto"
+                parameters {
+                  type: StringType
+                  name: "target"
+                  kbSelection: SelectGlobalKB
+                  stringValue: "outPos"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
