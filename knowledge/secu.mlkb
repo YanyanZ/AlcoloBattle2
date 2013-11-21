@@ -12,4 +12,25 @@ root {
       boolValue: false
     }
   }
+  objectValue {
+    key: "inPosition"
+    value {
+      type: Bool
+      boolValue: false
+    }
+  }
+  objectValue {
+    key: "team"
+    value {
+      type: String
+      stringValue: "secu"
+    }
+  }
+  objectValue {
+    key: "test"
+    value {
+      type: Int
+      intValue: 0
+    }
+  }
 }

@@ -1,0 +1,192 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{da7b12e7-e5d3-4076-86cd-bffbe31aeb42}"
+name: "go_dance"
+description: ""
+children {
+  type: Node
+  name: "11b361f3-7c58-4116-84cc-0948bbfea702"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "b6b90998-9037-473c-8b42-f45d7ce11835"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5486
+          y: 2580
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "336a89d0-105c-4753-89b1-cbfd7eca1431"
+          presentation {
+            itemTemplate: "BTSelectorRandom.qml"
+            position {
+              x: -8.5
+              y: 114.5
+              z: 0
+            }
+            label: "random dance place"
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SelectorNodeRandom
+              isActivated: true
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "8a4c72d9-045e-461f-8baa-cd3f1c1e2b9c"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -180
+                  y: 136
+                  z: 0
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: StringType
+                      name: "target"
+                      kbSelection: SelectGlobalKB
+                      stringValue: "dances[0]"
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "b76a426c-da05-4fcb-8c9d-e9d6e6248898"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: -6
+                  y: 142
+                  z: 0
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: StringType
+                      name: "target"
+                      kbSelection: SelectGlobalKB
+                      stringValue: "dances[1]"
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "dcfdeaf0-f176-468e-940e-3337f62f381d"
+              presentation {
+                itemTemplate: "BTActionNode.qml"
+                position {
+                  x: 141
+                  y: 141
+                  z: 0
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: ActionNode
+                  isActivated: true
+                  [mlv.toolset.proto.ActionNode.extension] {
+                    actionName: "goto"
+                    parameters {
+                      type: StringType
+                      name: "target"
+                      kbSelection: SelectGlobalKB
+                      stringValue: "dances[2]"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "4f29fb8b-4cf5-458b-96cb-5826e28dda36"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: 263.05965141612069
+              y: 122.79183006535868
+              z: 0
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/embedded/talk.mlbt"
+                }
+                parameters {
+                  type: StringType
+                  name: "caption"
+                  kbSelection: plainValue
+                  stringValue: "DANCE"
+                }
+                parameters {
+                  type: IntType
+                  name: "duration"
+                  kbSelection: plainValue
+                  intValue: 10
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

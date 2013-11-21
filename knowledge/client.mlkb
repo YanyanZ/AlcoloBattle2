@@ -6,17 +6,10 @@ version {
 root {
   type: Object
   objectValue {
-    key: "atTable"
+    key: "battleIndex"
     value {
-      type: Bool
-      boolValue: false
-    }
-  }
-  objectValue {
-    key: "chatting"
-    value {
-      type: Bool
-      boolValue: false
+      type: Int
+      intValue: -1
     }
   }
   objectValue {
@@ -48,13 +41,6 @@ root {
     }
   }
   objectValue {
-    key: "detectPeople"
-    value {
-      type: Bool
-      boolValue: false
-    }
-  }
-  objectValue {
     key: "drunk"
     value {
       type: Bool
@@ -62,24 +48,10 @@ root {
     }
   }
   objectValue {
-    key: "fighting"
+    key: "isAlive"
     value {
       type: Bool
-      boolValue: false
-    }
-  }
-  objectValue {
-    key: "hasADrink"
-    value {
-      type: Bool
-      boolValue: false
-    }
-  }
-  objectValue {
-    key: "isAttacked"
-    value {
-      type: Bool
-      boolValue: false
+      boolValue: true
     }
   }
   objectValue {
@@ -90,66 +62,17 @@ root {
     }
   }
   objectValue {
-    key: "levelPee"
+    key: "team"
     value {
-      type: Int
-      intValue: 0
-    }
-  }
-  objectValue {
-    key: "needToPee"
-    value {
-      type: Bool
-      boolValue: false
-    }
-  }
-  objectValue {
-    key: "ordering"
-    value {
-      type: Bool
-      boolValue: false
-    }
-  }
-  objectValue {
-    key: "peeing"
-    value {
-      type: Bool
-      boolValue: false
-    }
-  }
-  objectValue {
-    key: "screaming"
-    value {
-      type: Bool
-      boolValue: false
-    }
-  }
-  objectValue {
-    key: "speed"
-    value {
-      type: Int
-      intValue: 100
-    }
-  }
-  objectValue {
-    key: "thirsty"
-    value {
-      type: Bool
-      boolValue: false
+      type: String
+      stringValue: "client"
     }
   }
   objectValue {
     key: "thresholdDrunk"
     value {
       type: Int
-      intValue: 100
-    }
-  }
-  objectValue {
-    key: "thresholdPee"
-    value {
-      type: Int
-      intValue: 100
+      intValue: 10
     }
   }
 }
