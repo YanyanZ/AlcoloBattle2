@@ -12,18 +12,4 @@ root {
       boolValue: false
     }
   }
-  objectValue {
-    key: "inPosition"
-    value {
-      type: Bool
-      boolValue: false
-    }
-  }
-  objectValue {
-    key: "test"
-    value {
-      type: Int
-      intValue: 0
-    }
-  }
 }
