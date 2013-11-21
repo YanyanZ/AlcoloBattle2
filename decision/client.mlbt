@@ -270,38 +270,137 @@ children {
                               [mlv.toolset.proto.Node.extension] {
                                 children {
                                   type: Node
-                                  name: "3a355424-d1a9-4f7d-80df-fa733a9fb516"
+                                  name: "6b61db26-e07e-46cc-8491-19db857bdccb"
                                   presentation {
-                                    itemTemplate: "BTEmbeddedNode.qml"
+                                    itemTemplate: "BTSelectorRandom.qml"
                                     position {
-                                      x: 12.105713200908212
-                                      y: 131.64963105987408
+                                      x: -4.9293638379349431
+                                      y: 142.3161171052202
                                       z: nan
                                     }
                                   }
                                   properties {
                                     type: BTNodeProperties
                                     [mlv.toolset.proto.BTNodeProperties.extension] {
-                                      type: BTEmbeddedBehaviorNode
+                                      type: SelectorNodeRandom
                                       isActivated: true
-                                      [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
-                                        behaviorName {
-                                          type: StringType
-                                          name: ""
-                                          kbSelection: plainValue
-                                          stringValue: "decision/embedded/talk.mlbt"
+                                    }
+                                  }
+                                  [mlv.toolset.proto.Node.extension] {
+                                    children {
+                                      type: Node
+                                      name: "03269946-8476-410d-9822-79feb6b585d9"
+                                      presentation {
+                                        itemTemplate: "BTEmbeddedNode.qml"
+                                        position {
+                                          x: -8.0345600539794759
+                                          y: 133.70423211875959
+                                          z: nan
                                         }
-                                        parameters {
-                                          type: StringType
-                                          name: "caption"
-                                          kbSelection: plainValue
-                                          stringValue: "FIGHT"
+                                      }
+                                      properties {
+                                        type: BTNodeProperties
+                                        [mlv.toolset.proto.BTNodeProperties.extension] {
+                                          type: BTEmbeddedBehaviorNode
+                                          isActivated: true
+                                          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                                            behaviorName {
+                                              type: StringType
+                                              name: ""
+                                              kbSelection: plainValue
+                                              stringValue: "decision/embedded/talk.mlbt"
+                                            }
+                                            parameters {
+                                              type: StringType
+                                              name: "caption"
+                                              kbSelection: plainValue
+                                              stringValue: "Enfoire !"
+                                            }
+                                            parameters {
+                                              type: IntType
+                                              name: "duration"
+                                              kbSelection: plainValue
+                                              intValue: 10
+                                            }
+                                          }
                                         }
-                                        parameters {
-                                          type: IntType
-                                          name: "duration"
-                                          kbSelection: plainValue
-                                          intValue: 10
+                                      }
+                                    }
+                                    children {
+                                      type: Node
+                                      name: "8e1327c2-2eb2-4112-9729-abf4e94b8149"
+                                      presentation {
+                                        itemTemplate: "BTEmbeddedNode.qml"
+                                        position {
+                                          x: -109.75213900134804
+                                          y: 129.79201754386077
+                                          z: nan
+                                        }
+                                      }
+                                      properties {
+                                        type: BTNodeProperties
+                                        [mlv.toolset.proto.BTNodeProperties.extension] {
+                                          type: BTEmbeddedBehaviorNode
+                                          isActivated: true
+                                          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                                            behaviorName {
+                                              type: StringType
+                                              name: ""
+                                              kbSelection: plainValue
+                                              stringValue: "decision/embedded/talk.mlbt"
+                                            }
+                                            parameters {
+                                              type: StringType
+                                              name: "caption"
+                                              kbSelection: plainValue
+                                              stringValue: "Connard !"
+                                            }
+                                            parameters {
+                                              type: IntType
+                                              name: "duration"
+                                              kbSelection: plainValue
+                                              intValue: 10
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                    children {
+                                      type: Node
+                                      name: "f34e8a3d-d8e0-4af2-876a-13729ad6bb2e"
+                                      presentation {
+                                        itemTemplate: "BTEmbeddedNode.qml"
+                                        position {
+                                          x: 88.466732793523988
+                                          y: 132.40016059379332
+                                          z: nan
+                                        }
+                                      }
+                                      properties {
+                                        type: BTNodeProperties
+                                        [mlv.toolset.proto.BTNodeProperties.extension] {
+                                          type: BTEmbeddedBehaviorNode
+                                          isActivated: true
+                                          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                                            behaviorName {
+                                              type: StringType
+                                              name: ""
+                                              kbSelection: plainValue
+                                              stringValue: "decision/embedded/talk.mlbt"
+                                            }
+                                            parameters {
+                                              type: StringType
+                                              name: "caption"
+                                              kbSelection: plainValue
+                                              stringValue: "Creve !"
+                                            }
+                                            parameters {
+                                              type: IntType
+                                              name: "duration"
+                                              kbSelection: plainValue
+                                              intValue: 10
+                                            }
+                                          }
                                         }
                                       }
                                     }

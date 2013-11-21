@@ -100,7 +100,7 @@ root {
     key: "thresholdDrunk"
     value {
       type: Int
-      intValue: 1
+      intValue: 4
     }
   }
 }
