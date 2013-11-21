@@ -6,31 +6,17 @@ version {
 root {
   type: Object
   objectValue {
-    key: "Engage"
+    key: "engaged"
     value {
       type: Bool
       boolValue: false
     }
   }
   objectValue {
-    key: "inPosition"
-    value {
-      type: Bool
-      boolValue: false
-    }
-  }
-  objectValue {
-    key: "team"
-    value {
-      type: String
-      stringValue: "secu"
-    }
-  }
-  objectValue {
-    key: "test"
+    key: "videurPlace"
     value {
       type: Int
-      intValue: 0
+      intValue: -1
     }
   }
 }

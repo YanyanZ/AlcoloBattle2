@@ -141,14 +141,16 @@ namespace templates
 				if (entityKnowledge.hasProperty ("videurPlace") && entityKnowledge.getInt ("videurPlace") != -1)
 				{
 					uint64_t videurPlace = entityKnowledge.getInt ("videurPlace");
+					knowledge_->getFramework().getEntityWorkingKnowledge(simulation_->getEntities()[i]).setInt ("videurPlace", -1);
 
 					for (std::size_t j = 0; j < simulation_->countEntities() ; ++j)
 					{
 						const mlv::utils::DynamicObject& entityKnowledge2 = knowledge_->getFramework().getEntityKnowledge(simulation_->getEntities()[j]);
 
-						if (entityKnowledge2.hasProperty ("battleIndex") && entityKnowledge.getInt ("battleIndex") == videurPlace)
+						if (entityKnowledge2.hasProperty ("battleIndex") && entityKnowledge2.getInt ("battleIndex") == videurPlace)
 						{
 							knowledge_->getFramework().getEntityWorkingKnowledge(simulation_->getEntities()[j]).setBool ("isAlive", false);
+
 
 							if (videurPlace == 0)
 								globalKnowledge.setInt ("battleCount[0]", 0);

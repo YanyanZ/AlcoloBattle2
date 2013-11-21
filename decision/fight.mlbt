@@ -75,7 +75,7 @@ children {
                 type: BTNodeProperties
                 [mlv.toolset.proto.BTNodeProperties.extension] {
                   type: SequenceNode
-                  isActivated: true
+                  isActivated: false
                 }
               }
               [mlv.toolset.proto.Node.extension] {
@@ -158,7 +158,7 @@ children {
                 type: BTNodeProperties
                 [mlv.toolset.proto.BTNodeProperties.extension] {
                   type: SequenceNode
-                  isActivated: true
+                  isActivated: false
                 }
               }
               [mlv.toolset.proto.Node.extension] {
@@ -241,7 +241,7 @@ children {
                 type: BTNodeProperties
                 [mlv.toolset.proto.BTNodeProperties.extension] {
                   type: SequenceNode
-                  isActivated: true
+                  isActivated: false
                 }
               }
               [mlv.toolset.proto.Node.extension] {
